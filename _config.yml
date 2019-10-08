@@ -82,3 +82,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+# Set theme
+theme: minimal-mistakes-jekyll
