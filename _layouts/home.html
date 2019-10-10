@@ -1,23 +1,71 @@
 ---
-layout: default
+layout: base
 ---
 
-<h2>{{ page.title }}</h2>
+<section class="across hero">
+  <h1 class="wordmark-gradient-1">Three Space Lab</h1>
+  <div class="tagline">{% include home/tagline.html %}</div>
+</section>
+
+<section class="container">
+  <h2>{{ page.title }}</h2>
+  {{ content }}
+</section>
+<section class="container">
+  <div class="b-group">
+      {% for item in page.feature_points%}
+      <div class="b-item">
+        <h3>{{item.title}}</h3>
+        <img src={{item.image}}>
+        {{item.paragraph}}
+      </div>
+      {%endfor%}
+  </div>
+</section>
+
+<section class="fillbox gradient-0-lr">
+  <div class="tile" style="background-image: url('/assets/img/uploads/sample-0.png');"></div>
+</section>
+
+<section class="fillbox gradient-1-rl">
+  <div class="tile" style="background-image: url('/assets/img/uploads/sample-1.png');"></div>
+</section>
+
+<section class="container center">
+
+  <h2>The Trusted Provider</h2>
+  <div class="logogroup">
+    <img src="/assets/img/uploads/mit-logo.png">
+    <img src="/assets/img/uploads/mit-logo.png">
+    <img src="/assets/img/uploads/mit-logo.png">
+    <img src="/assets/img/uploads/mit-logo.png">
+    <img src="/assets/img/uploads/mit-logo.png">
+  </div>
+</section>
+
+
+<section class="across center" style="height:400px; color:white; background-color: black">
+  <h1> TEST</h1>
+</section>
+
+<section class="container">
+
+  <h2>{{ page.title }}</h2>
 
   {% include page-intro.html %}
 
   {{ content }}
+</section>
 
-  <section>
+<section class="container">
 
-    <h3>Recent posts from the blog</h3>
+  <h3>Recent posts from the blog</h3>
 
-    <ul>
-      {% for post in site.posts limit:3 %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-
-  </section>
+  <ul>
+    {% for post in site.posts limit:3 %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
