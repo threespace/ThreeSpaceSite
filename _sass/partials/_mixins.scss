@@ -2,12 +2,17 @@
 
 // A basic button
 @mixin button($btn-bg, $btn-text) {
-  font-weight: $bold-font-weight;
-  padding: 2rem;
+  font-size:3.2rem;
+  font-family: $brand-font;
+  text-decoration: underline;
+  padding: 1.5rem 4.5rem 1.5rem 4.5rem;
 	line-height: $base-line-height;
 	color: $btn-text;
-	background-color: $btn-bg;
-	border: 3px solid $btn-bg;
+  background-color: $btn-bg;
+  display:inline-block;
+  box-shadow: 0 0 0 1px inset;
+  border: 2px solid $btn-bg;
+  
 }
 
 // Disable text selection

@@ -14,11 +14,7 @@ layout: base
 <section class="container">
   <div class="b-group">
       {% for item in page.feature_points%}
-      <div class="b-item">
-        <h3>{{item.title}}</h3>
-        <img src={{item.image}}>
-        {{item.paragraph}}
-      </div>
+        {% include home/feature-box.html item=item%}
       {%endfor%}
   </div>
 </section>
@@ -44,28 +40,29 @@ layout: base
 </section>
 
 
-<section class="across center" style="height:400px; color:white; background-color: black">
-  <h1> TEST</h1>
+<section class="across center">
+  <div class="sliding-gallery-wrapper">
+    <div class="sliding-gallery-overlay">
+      <h1>We're always doing new things.</h1>
+      <a href="/contact">Stay in touch</a> 
+    </div>
+    <div class="sliding-gallery">
+      <div class="sliding-gallery-shadow"></div>
+    </div>
+  </div>
 </section>
 
 <section class="container">
 
-  <h2>{{ page.title }}</h2>
-
-  {% include page-intro.html %}
-
-  {{ content }}
-</section>
-
-<section class="container">
-
-  <h3>Recent posts from the blog</h3>
-
-  <ul>
-    {% for post in site.posts limit:3 %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+  <h2><a>Latest news</a></h2>
+  <div class="newsgrid">
+      {% for post in site.posts limit:3 %}
+          <h3 class="news-date">{{post.date | date_to_string}}</h3>
+          <h3 class="news-title">{{post.title}}</h3>
+          <div></div>
+          <div class="news-excerpt">{{post.excerpt}}</div>
+          <div></div>
+          <a class="news-link" href="{{ post.url }}">Read more</a>
+      {% endfor %}
+  </div>
 </section>
