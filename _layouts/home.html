@@ -3,8 +3,10 @@ layout: base
 ---
 
 <section class="across hero">
-  <h1>Three Space Lab</h1>
-  <div class="tagline">{% include home/tagline.html %}</div>
+  <h1>{{page.title}}</h1>
+  <img class="hero-left" src="/assets/img/uploads/quest-outline-0.png">
+  <img class="hero-right" src="/assets/img/uploads/vive-outline-0.png">
+  <div class="tagline">{{page.tagline | markdownify }}</div>
 </section>
 
 <section class="container">
@@ -17,13 +19,9 @@ layout: base
   </div>
 </section>
 
-<section class="fillbox gradient-0-lr">
-  <div class="tile" style="background-image: url('/assets/img/uploads/sample-0.png');"></div>
-</section>
-
-<section class="fillbox gradient-1-rl">
-  <div class="tile" style="background-image: url('/assets/img/uploads/enterprise-users-0.jpg');"></div>
-</section>
+{%for box in page.boxes%}
+  {%include home/box.html item=box%}
+{%endfor%}
 
 <section class="across center">
   <div class="sliding-gallery-wrapper">
@@ -39,7 +37,7 @@ layout: base
 
 {%if site.posts.size > 0 %}
 <section class="container">
-  <h2><a>Latest news</a></h2>
+  <h2><a href="/news">Latest news</a></h2>
   <div class="newsgrid">
       {% for post in site.posts limit:3 %}
           <h3 class="news-date">{{post.date | date_to_string}}</h3>

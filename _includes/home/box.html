@@ -1,0 +1,21 @@
+{%if include.item.flip%}
+<section class="fillbox flip">
+        <div class="card gradient-1-rl">
+            <h2>{{include.item.title}}</h2>
+            {{include.item.content}}
+        </div>
+    <div class="tile" style="background-image: url('{{include.item.image}}');">
+            <div class="tile-shadow-1"></div>
+        </div>
+</section>
+{%else%}
+<section class="fillbox">
+    <div class="tile" style="background-image: url('{{include.item.image}}');">
+        <div class="tile-shadow-0"></div>
+    </div>
+    <div class="card gradient-0-lr">
+        <h2>{{include.item.title}}</h2>
+        {{include.item.content}}
+    </div>
+</section>
+{%endif%}
