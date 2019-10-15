@@ -26,7 +26,6 @@ body {
 }
 
 .wordmark-gradient-1 {
-  font-size: 7.2rem;
   background-image: linear-gradient(to bottom, $color-secondary-2-0, $color-complement-0);
   color: transparent;
   background-clip: text;
@@ -44,7 +43,18 @@ h1,h2,h3,h4,h5,h6,figure {
     padding-top: 2rem;
   }
 }
-
+.hero > h1 {
+  font-size: 7.2rem;
+  @media screen and (min-width: $screen-sm-min) {
+    font-size: 8.4rem;
+  }
+  @media screen and (min-width: $screen-md-min) {
+    font-size: 10rem;
+  }
+  @media screen and (min-width: $screen-lg-min) {
+    font-size: 12rem;
+  }
+}
 
 h1,h2,h3,.tagline {
   font-family: $brand-font;

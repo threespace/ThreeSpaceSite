@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+$fa-font-path: "fonts/font-awesome/";
+@import 'font-awesome';
+
 @import
   "partials/fonts",
   "partials/variables",

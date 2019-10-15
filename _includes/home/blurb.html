@@ -1,0 +1,14 @@
+<div class="b-item">
+    <h3>{{include.item.title}}</h3>
+    {%if include.item.image %}
+    <img src={{include.item.image}}>
+    {%elsif include.item.fa-icon %}
+    <div class="fa-stack fa-4x">
+        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+        <i class="fas {{include.item.fa-icon}} fa-stack-1x fa-inverse"></i>
+    </div>
+    {%endif%}
+    <div>
+    {{include.item.paragraph}}
+    </div>
+</div>

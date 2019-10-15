@@ -82,3 +82,9 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  
+gems:
+  - jekyll-font-awesome-sass
+
+font-awesome:
+  assets: true
