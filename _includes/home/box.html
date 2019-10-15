@@ -2,7 +2,7 @@
 <section class="fillbox flip">
         <div class="card gradient-1-rl">
             <h2>{{include.item.title}}</h2>
-            {{include.item.content}}
+            {{include.item.content | markdownify}}
         </div>
     <div class="tile" style="background-image: url('{{include.item.image}}');">
             <div class="tile-shadow-1"></div>
@@ -15,7 +15,7 @@
     </div>
     <div class="card gradient-0-lr">
         <h2>{{include.item.title}}</h2>
-        {{include.item.content}}
+        {{include.item.content | markdownify}}
     </div>
 </section>
 {%endif%}
