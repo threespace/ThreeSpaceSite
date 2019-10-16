@@ -50,7 +50,9 @@ dl {
 em {
 	font-style: italic;
 }
-
+html {
+	display: block;
+}
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -76,6 +78,9 @@ code {
 
 ::selection {
   background-color: $selection-bg-color;
+}
+img,i {
+	user-select: none;
 }
 
 input,

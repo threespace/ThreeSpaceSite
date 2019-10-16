@@ -6,7 +6,6 @@ $link-color: rgb(0,114,154);
 $link-hover-color: rgb(0,57,78);
 $grey-bg-color: rgb(243,243,243);
 $hairline-color: rgb(230,230,230);
-$selection-bg-color: rgba(255,255,100,0.5);
 
 // typographic defaults
 $brand-font: 'Comfortaa', cursive;
@@ -63,3 +62,5 @@ $color-complement-1: #F1FEE4;
 $color-complement-2: #D8FAB6;
 $color-complement-3: #A9ED68;
 $color-complement-4: #92E147;
+
+$selection-bg-color: fade-out(mix($color-base-text, $color-background, 25%),0.5);
