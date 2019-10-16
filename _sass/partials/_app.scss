@@ -64,6 +64,9 @@ header > h1 {
     color: white;
   }
 }
+header > a {
+  display: flex;
+}
 
 // main menu, is a grid item
 header > nav {
@@ -441,6 +444,8 @@ img.nav-logo {
   font-size: 2.4rem;
   font-weight: 200;
   color: $color-base-text-negative;
+  margin: auto 0;
+  padding: 0 0 0 0.5rem;
 }
 .hero-left, .hero-right {
   width: 80rem;
