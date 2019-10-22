@@ -13,7 +13,7 @@ layout: default
           <h3 class="news-date">{{post.date | date_to_string}}</h3>
           <h3 class="news-title">{{post.title}}</h3>
           <div></div>
-          <div class="news-excerpt">{{post.excerpt | strip_html }}</div>
+          <div class="news-excerpt">{{post.excerpt | markdownify }}</div>
           <div></div>
           <a class="news-link" href="{{ post.url }}">Read more</a>
       {% endfor %}

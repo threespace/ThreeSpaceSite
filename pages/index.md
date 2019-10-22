@@ -35,5 +35,5 @@ boxes:
      Communicating complex ideas is important when interacting with customers and investors, and also amongst employees.
 
 
-     We currently serve clients in biotech, management consulting, and education.
+     We currently serve clients in biotech and management consulting.
 ---
