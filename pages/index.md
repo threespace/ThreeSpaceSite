@@ -3,7 +3,7 @@ layout: home
 title: Three Space Lab
 permalink: /
 section: home
-tagline: Visualize complex ideas **together.**
+tagline: Craft complex ideas **together.**
 intro_title: The Right Stuff
 intro_paragraph: >
   We are a team of designers and engineers focused on building world-class collaborative computing systems. As an MIT Media Lab spinout, our work builds on years of experience in multi-user virtual reality and scientific visualization.
