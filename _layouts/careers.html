@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+{% include page-intro.html %}
+
+{{ content }}
+
+<h2>Latest Job Postings</h2>
+    {% assign jobs = site.jobs | where: "visible", "true" | sort: date %}
+
+    {% if jobs.size > 0 %}
+    <div class="job-list">
+      {% for post in jobs %}
+      <div class="job-item">
+        <h2>{{post.title}}</h2>
+        <h4>({{post.date | date_to_string}})</h4>
+        <div></div>
+        <div>{{post.content | markdownify }}</div>
+        </div>
+      {% endfor %}
+  </div>
+  {% else %}
+  <div>
+      We don't have any specific positions open at the moment, but feel free to get in touch if you're interested in working with us.
+  </div>
+  {% endif %}
+  <br>
+  <h3 class="center">
+    {{page.outro_paragraph}}
+  </h3>

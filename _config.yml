@@ -87,3 +87,7 @@ gems:
 
 font-awesome:
   assets: true
+
+collections:
+  - people
+  - jobs

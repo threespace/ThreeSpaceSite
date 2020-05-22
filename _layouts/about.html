@@ -1,0 +1,42 @@
+---
+layout: base
+---
+
+<section class="container-wide">
+    <div class="container">
+        <h1>{{ page.title }}</h1>
+        <div>{{ content }}</div>
+    </div>
+    <div class="bio-list">
+        {% assign people = site.people | sort: 'sequence' %}
+        {% for person in people %}
+        <div class="bio-item">
+            <div class="flex-h">
+                <img class="bio-photo" src={{person.photo}}></img>
+                <div class="bio-head-text">
+                    <div class="flex-h bio-name">
+                        <h2>{{person.name}}</h2>
+                        {% if person.pronouns %}
+                        <div class="badge">{{person.pronouns}}</div>
+                        {% endif %}
+                    </div>
+                    <h3>{{person.position}}</h3>
+                </div>
+            </div>
+            <hr/>
+            <div>{{person.content | markdownify }}</div>
+            {% if person.social %}
+                <ul class="list-inline social-buttons">
+                    {% if person.social.twitter %}
+                    <li><a href={{person.social.twitter}}><i class = "fab fa-twitter"></i></a></li>
+                    {% endif %}
+                    {% if person.social.linkedin %}
+                    <li><a href={{person.social.linkedin}}><i class = "fab fa-linkedin-in"></i></a></li>
+                    {% endif %}
+                </ul>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    <br>
+</section>

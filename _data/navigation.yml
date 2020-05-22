@@ -4,5 +4,9 @@
   url: /
 - text: News
   url: /news
+- text: About Us
+  url: /about
+- text: Careers
+  url: /careers
 - text: Contact
   url: /contact

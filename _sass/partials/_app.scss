@@ -172,6 +172,19 @@ main > section.container {
   margin-left: auto;
   padding: 10rem;
 }
+main > section.container-wide {
+  width: 100%;
+  max-width: 200rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10rem;
+}
+div.container {
+  max-width: 120rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 4rem;
+}
 
 .container img {
   padding: 10%;
@@ -459,4 +472,108 @@ img.nav-logo {
 }
 .hero-right {
   left: 75%;
+}
+
+.job-list {
+  display:flex;
+  flex-flow: column;
+}
+.job-item {
+  margin:2rem;
+  padding: 2rem;
+  background-color:white;
+  border-radius:0.5rem;
+  box-shadow: 0.5rem 0.5rem 1rem 0.5rem #3333;
+}
+.job-item ul {
+  list-style: circle;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+.bio-list {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content:center;
+}
+.bio-item {
+  margin:2rem;
+  padding: 2rem;
+  background-color:white;
+  border-radius:0.5rem;
+  box-shadow: 0.5rem 0.5rem 1rem 0.5rem #3333;
+  max-width: 50rem;
+}
+.bio-item hr {
+  width: 5rem;
+  margin: 1rem auto 3rem auto;
+  color: #334
+}
+img.bio-photo {
+  border-radius: 50%;
+  object-fit:cover;
+  width: 20rem;
+  height: 20rem;
+  padding: 0;
+  margin: 2rem;
+}
+.bio-name {
+  margin: 1rem;
+}
+.bio-name h2 {
+  display: inline-block;
+  padding: 1rem;
+}
+.badge {
+  display: inline-block;
+  background-color: #334;
+  color: #fff;
+  border-radius: 1.25rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  padding: 0 1rem 0 1rem;
+  font-weight:400;
+  font-family: comfortaa;
+  line-height: 180%;
+}
+
+.flex-h {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.bio-head-text {
+  flex-grow:1;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+ul.list-inline {
+  list-style:none;
+}
+ul.list-inline li {
+  display:inline-block;
+  margin: 0.5rem;
+}
+ul.social-buttons {
+  text-align: right;
+}
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #fff;
+  border-radius: 100%;
+  outline: 0;
+  background-color: #212529;
+  text-align: center;
 }
