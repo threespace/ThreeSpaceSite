@@ -6,7 +6,7 @@ section: home
 tagline: Craft complex ideas **together.**
 intro_title: About
 intro_paragraph: >
-Three Space Lab is an early-stage MIT Media Lab spin out working on VR and AR software solutions for education, training, and workplace learning, with a focus on uses of interactive simulation. Some previous projects have focused on electricity and magnetism, crystalline structures, 3D scanning, and tools for visual design of brands. We are a team of designers and engineers focused on building world-class collaborative spatial computing systems. Our work builds on years of experience in multi-user virtual reality and scientific visualization.
+  Three Space Lab is an early-stage MIT Media Lab spin out working on VR and AR software solutions for education, training, and workplace learning, with a focus on uses of interactive simulation. Some previous projects have focused on electricity and magnetism, crystalline structures, 3D scanning, and tools for visual design of brands. We are a team of designers and engineers focused on building world-class collaborative spatial computing systems. Our work builds on years of experience in multi-user virtual reality and scientific visualization.
 blurbs:
  - title: Collaborate anywhere
    fa-icon: fa-globe-americas
