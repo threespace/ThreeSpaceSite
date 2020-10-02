@@ -1,7 +1,7 @@
 ---
 name: Hung T. Nguyen 
 position: VR/AR Software Engineer 
-photo: /assets/img/uploads/hung_20190614_141052_cropped.jpg
+photo: /assets/img/uploads/hung-20190614-141052-cropped.jpg
 pronouns: he/him
 sequence: 400
 social:
