@@ -1,9 +1,9 @@
 ---
 name: Wiley Corning
-position: Design and Engineering Lead
+position: Alumnus (Design and Engineering Lead)
 photo: /assets/img/uploads/profile-photo-wiley.jpg
 pronouns: he/him
-sequence: 200
+sequence: 100000
 social:
   twitter: https://twitter.com/wileycorning
   linkedin: https://www.linkedin.com/in/wiley-corning/
